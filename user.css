@@ -4,6 +4,7 @@
     }
   }
 
+p { font-size: 14.8px; }
 h1.title { font-size: 24px; font-weight: normal; }
 h2.title { font-size: 20px; font-weight: normal; }
 div.part { border-top: 1px solid #eee; padding-bottom: 10px; }
