@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>固定风险资金管理方法</title>
+
+    <!-- Bootstrap -->
+  <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+      <!-- Custom styles for this template -->
+      <link href="../user.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+      <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="/">水木顺投</a>
+              </div>
+              <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="../about.html">关于水木</a></li>
+                        <li><a href="../scheme.html">投资科普</a></li>
+                        <li><a href="../note.html">交易笔记</a></li>
+                    </ul>
+              </div>
+              <!--/.nav-collapse -->
+          </div>
+      </nav>
+
+      <div class="jumbotron text-center">
+            <div class="container">
+                <h2>固定风险资金管理方法</h2>
+                <div>2017-10-31 &nbsp;<a href="../">水木顺投</a></div>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="text-center"><img src="../images/note/risk.jpg" class="pic" width="100%" /></div>
+
+            <p>固定风险资金管理，是一种最基础的、最简单的资金管理方案。具体实现如下：</p>
+            <pre class="language-javascript">    M <span class="token operator">=</span> R <span class="token operator">*</span> <span class="token number">100</span> <span class="token operator">/</span> P</pre>
+            <h3 class="mume-header" id="&#x53C2;&#x6570;&#x542B;&#x4E49;">参数含义</h3>
+            
+            <ul>
+            <li>M : 允许投入的最大金额。</li>
+            <li>R : 单次交易允许亏损的最大金额，R 为常量。</li>
+            <li>P : 当前交易的止损比例，P 为变量。</li>
+            </ul>
+            <h3 class="mume-header" id="&#x793A;&#x4F8B;&#x8BF4;&#x660E;">示例说明</h3>
+            
+            <ol>
+            <li>
+            <p>根据自己的基本情况，来制定出单次交易允许亏损的最大金额。比如 R=1000，表示单次亏损的金额不能超出1000元。</p>
+            </li>
+            <li>
+            <p>根据自己的交易策略、心理状况、或者品种的波动性，估出一个止损比例<code>P</code>。<br>
+            如 P=2.5，则表示止损比例为 2.5%。</p>
+            </li>
+            <li>
+            <p>计算出本次允许投入的最大金额 M = R * 100 / P。套用公式：</p>
+            </li>
+            </ol>
+            <pre class="language-javascript">    M <span class="token operator">=</span> <span class="token number">1000</span> <span class="token operator">*</span> <span class="token number">100</span> <span class="token operator">/</span> <span class="token number">2.5</span> <span class="token operator">=</span> <span class="token number">40000</span> 元。</pre>
+            <ol start="4">
+            <li>假设某支股票的单价为12.5元，那么就可以计算出应该买入的数量为：</li>
+            </ol>
+            <pre class="language-javascript">    <span class="token number">40000</span> <span class="token operator">/</span> <span class="token number">12.5</span> <span class="token operator">=</span> <span class="token number">3200</span> 股</pre>
+            <h3 class="mume-header" id="&#x5E94;&#x7528;&#x573A;&#x666F;">应用场景</h3>
+            
+            <p>该方案是最基础的，它能够很好地控制单次交易的风险金额。但是由于 R 是常量，所以它和当前帐户权益并没有太大关系。也就是说，在交易策略逐步成熟、或是行情大好的时候，它并不能够高效地利用资金。基于上述原因，该方案适用于初涉交易市场的新手。</p>
+
+            
+        </div>
+
+
+      <!-- Site footer -->
+      <footer class="footer">
+          <div class="container">
+              <p>Copyright © 2017 水木顺投. All Rights Reserved.</p>
+          </div>
+      </footer>
+    
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>

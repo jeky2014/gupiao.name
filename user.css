@@ -35,3 +35,37 @@ img.pic { padding: 20px 0; width:auto;
 
 #titlelist a { color: #555; text-decoration: underline; }
 #titlelist a:hover { color: #FF0000; text-decoration: underline; }
+#titlelist .date { margin-left: 10px; color: gray; font-size: 10px; font-style: italic }
+
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  border: 0px solid #ddd;
+  border-radius: 3px;
+  background: #f5f5f5;
+}
+
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+
