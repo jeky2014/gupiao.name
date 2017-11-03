@@ -36,6 +36,7 @@ img.pic { padding: 20px 0; width:auto;
 #titlelist a { color: #555; text-decoration: underline; }
 #titlelist a:hover { color: #FF0000; text-decoration: underline; }
 #titlelist .date { margin-left: 10px; color: gray; font-size: 10px; font-style: italic }
+span.date { margin-left: 10px; color: gray; font-size: 10px; font-style: italic }
 
 
 /* Code blocks */
