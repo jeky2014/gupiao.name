@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>WeUI</title>
+    <link rel="stylesheet" href="https://res.wx.qq.com/open/libs/weui/1.1.2/weui.min.css">
+</head>
+<body ontouchstart>
+
+
+<div class="weui-cells__title">1. 您的贷款发放日期：</div>
+<div class="weui-cells weui-cells_radio">
+    <label class="weui-cell weui-check__label" for="x11">
+        <div class="weui-cell__bd">
+            <p>贷款发放不到3年</p>
+        </div>
+        <div class="weui-cell__ft">
+            <input type="radio" class="weui-check" name="radio1" id="x11" checked="checked">
+            <span class="weui-icon-checked"></span>
+        </div>
+    </label>
+    <label class="weui-cell weui-check__label" for="x12">
+
+        <div class="weui-cell__bd">
+            <p>贷款发放满3年 —— 2010.01.01 之间</p>
+        </div>
+        <div class="weui-cell__ft">
+            <input type="radio" name="radio1" class="weui-check" id="x12">
+            <span class="weui-icon-checked"></span>
+        </div>
+    </label>
+    <label class="weui-cell weui-check__label" for="x13">
+
+        <div class="weui-cell__bd">
+            <p>发放日期在 2009年12月31日及更早</p>
+        </div>
+        <div class="weui-cell__ft">
+            <input type="radio" name="radio1" class="weui-check" id="x13" >
+            <span class="weui-icon-checked"></span>
+        </div>
+    </label>
+</div>
+
+<div class="weui-cells__title">2. 您的房贷月供金额（元）：</div>
+<div class="weui-cells">
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <input class="weui-input" type="number" placeholder=""/>
+        </div>
+    </div>
+</div>
+
+
+<div class="weui-cells__title">3. 您的信用卡近6个月内的最大单月使用额度（元）：</div>
+<div class="weui-cells">
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <input class="weui-input" type="number" placeholder=""/>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="weui-cells__title">您是否有相关的信贷产品？</div>
+<div class="weui-cells weui-cells_form">
+    <div class="weui-cell weui-cell_switch">
+        <div class="weui-cell__bd">无 / 有？</div>
+        <div class="weui-cell__ft">
+            <input class="weui-switch" type="checkbox"/>
+        </div>
+    </div>
+</div>
+
+<div class="weui-cells__title">您的信贷产品的余额合计为（元）：</div>
+<div class="weui-cells">
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <input class="weui-input" type="number" placeholder=""/>
+        </div>
+    </div>
+</div>
+
+<div class="weui-cells__title">您的信贷产品月供总金额为（元）：</div>
+<div class="weui-cells">
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <input class="weui-input" type="number" placeholder=""/>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="weui-cells__title">3. 您的房产总价（元）：</div>
+<div class="weui-cells">
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <input class="weui-input" type="number" placeholder=""/>
+        </div>
+    </div>
+</div>
+
+<div class="weui-cells__title">3. 您的担保余额为（元）：</div>
+<div class="weui-cells">
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <input class="weui-input" type="number" placeholder=""/>
+        </div>
+    </div>
+</div>
+
+
+<div class="weui-btn-area">
+    <a class="weui-btn weui-btn_primary" href="javascript:" id="showTooltips">确定</a>
+</div>
+
+
+</body>
+</html>
